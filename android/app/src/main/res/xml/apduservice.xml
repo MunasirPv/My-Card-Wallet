@@ -1,0 +1,16 @@
+<host-apdu-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:description="@string/hce_service_description"
+    android:requireDeviceUnlock="false">
+    <aid-group
+        android:category="payment"
+        android:description="@string/payment_aid_group_description">
+        <!-- Proximity Payment System Environment (PPSE) -->
+        <aid-filter android:name="325041592E5359532E4444463031" />
+        <!-- Visa Credit/Debit -->
+        <aid-filter android:name="A0000000031010" />
+        <!-- Mastercard Credit/Debit -->
+        <aid-filter android:name="A0000000041010" />
+        <!-- American Express -->
+        <aid-filter android:name="A000000025010801" />
+    </aid-group>
+</host-apdu-service>

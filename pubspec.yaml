@@ -1,0 +1,73 @@
+name: my_card_wallet
+description: Secure digital card wallet with biometric authentication and AES-256 encryption.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management
+  flutter_riverpod: ^2.5.1
+  hooks_riverpod: ^2.5.1
+  riverpod_annotation: ^2.3.5
+
+  # Code Generation (runtime annotations)
+  freezed_annotation: ^2.4.4
+  json_annotation: ^4.9.0
+
+  # Secure Storage & Encryption
+  flutter_secure_storage: ^9.2.2
+  encrypt: ^5.0.3
+  pointycastle: ^3.9.1
+
+  # Authentication
+  local_auth: ^2.3.0
+
+  # Camera & OCR
+  camera: ^0.11.0+2
+  google_mlkit_text_recognition: ^0.13.1
+
+  # Navigation
+  go_router: ^14.2.0
+
+  # UI & Animations
+  flutter_animate: ^4.5.0
+  flutter_credit_card: ^4.0.1
+  pinput: ^5.0.0
+  shimmer: ^3.0.0
+
+  # Security Utilities
+  safe_device: ^1.2.0
+
+  # Cryptography
+  crypto: ^3.0.3
+
+  # Utilities
+  uuid: ^4.4.0
+  intl: ^0.19.0
+  image_picker: ^1.1.2
+  permission_handler: ^11.3.1
+  flutter_svg: ^2.0.10+1
+  google_fonts: ^6.2.1
+  cupertino_icons: ^1.0.8
+  nfc_manager: ^4.1.1
+  flutter_nfc_kit: ^3.6.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  build_runner: ^2.4.11
+  riverpod_generator: ^2.4.3
+  freezed: ^2.5.7
+  json_serializable: ^6.8.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/icons/
